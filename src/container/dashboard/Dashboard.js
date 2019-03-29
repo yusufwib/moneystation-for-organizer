@@ -12,6 +12,7 @@ import PendapatanCard from '../pendapatanCard/PendapatanCard'
 import PengeluaranCard from '../pengeluaranCard/PengeluaranCard';
 import Grid from '@material-ui/core/Grid'
 import Dompetku from './../dompetku/Dompetku'
+import Ceksaldo from './../ceksaldo/Ceksaldo'
 
 
 
@@ -30,7 +31,6 @@ class Dashboard extends Component {
 
         )} />
 
-        <Route path="/" exact component={Persentase} />
         <Route path="/" exact component={Grafik} />
         <Route path="/pengeluaran" exact component={() => (
                             <section>
@@ -82,6 +82,16 @@ class Dashboard extends Component {
 
         )} />
         <Route path="/DompetKu" component={() => (<Dompetku />) } />
+
+        <Route path="/CekSaldo" exact component={() => (
+            <section>
+            <PermanentDrawerLeft heads="CekSaldo" className={classes.dashboard}>        
+            </PermanentDrawerLeft>
+            
+            </section>
+
+            )} />
+        <Route path="/CekSaldo" component={() => (<Ceksaldo />) } />
 
 
             </div>

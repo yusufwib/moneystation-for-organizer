@@ -26,6 +26,10 @@ const styles = {
   pos: {
     marginBottom: 12,
   },
+  nominal:{
+    fontSize: 90,
+    paddingTop: 19
+  }
 };
 
 function PengeluaranCard(props) {
@@ -41,6 +45,7 @@ function PengeluaranCard(props) {
 
       </CardContent>
       <CardActions>
+      <p className={classes.nominal}>Rp. 10.000.000</p>
       </CardActions>
     </Card>
   );

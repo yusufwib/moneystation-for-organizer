@@ -7,10 +7,12 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
+
 
 const CustomTableCell = withStyles(theme => ({
   head: {
-    backgroundColor: '#6EBF42',
+    backgroundColor: '#BAD35C',
     color: theme.palette.common.white,
   },
   body: {
@@ -26,6 +28,14 @@ const styles = theme => ({
   },
   table: {
     minWidth: 700,
+  },
+  button: {
+    margin: theme.spacing.unit,
+    float: 'right',
+    backgroundColor: '#758925'
+  },
+  input: {
+    display: 'none',
   },
   row: {
     '&:nth-of-type(odd)': {
@@ -53,6 +63,9 @@ function TableMasuk(props) {
 
   return (
     <Paper className={classes.root}>
+    <Button variant="contained" color="primary" className={classes.button}>
+    Tambah Data
+  </Button>
       <Table className={classes.table}>
         <TableHead>
           <TableRow>

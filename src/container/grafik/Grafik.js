@@ -23,6 +23,7 @@ const styles = {
   },
   title: {
     fontSize: 14,
+    paddingTop: 100
   },
   pos: {
     marginBottom: 12,

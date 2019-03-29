@@ -26,6 +26,10 @@ const styles = {
   pos: {
     marginBottom: 12,
   },
+  nominal:{
+    fontSize: 90,
+    paddingTop: 19
+  }
 };
 
 function LabaCard(props) {
@@ -41,6 +45,8 @@ function LabaCard(props) {
 
       </CardContent>
       <CardActions>
+
+      <p className={classes.nominal}>Rp. 10.000.000</p>
       </CardActions>
     </Card>
   );

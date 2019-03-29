@@ -22,6 +22,7 @@ import Masuk from '@material-ui/icons/TrendingDown'
 import Keluar from '@material-ui/icons/TrendingUp'
 import Money from '@material-ui/icons/AttachMoney'
 import Wallet from '@material-ui/icons/AccountBalance'
+import Dompet from '@material-ui/icons/AccountBalanceWallet'
 
 
 
@@ -74,7 +75,7 @@ function PermanentDrawerLeft(props) {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <AppBar position="fixed" className={classes.appBar} style={{backgroundColor: '#6ebf42'}}>
+      <AppBar position="fixed" className={classes.appBar} style={{backgroundColor: '#BAD35C'}}>
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
           {props.heads}
@@ -133,9 +134,17 @@ function PermanentDrawerLeft(props) {
           <Link className={classes.Link} to='/DompetKu'> 
             <ListItem button key='DompetKu'>
             <ListItemIcon><Wallet/></ListItemIcon>
-            <ListItemText primary='DompetKu' />
+            <ListItemText primary='BagHasil' />
           </ListItem>   
-          </Link>                           
+          </Link> 
+          
+          
+          <Link className={classes.Link} to='/CekSaldo'> 
+            <ListItem button key='DompetKu'>
+            <ListItemIcon><Dompet/></ListItemIcon>
+            <ListItemText primary='CekSaldo'/>
+          </ListItem>   
+          </Link> 
         
         </List>
         </div>

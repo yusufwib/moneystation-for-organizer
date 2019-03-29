@@ -27,6 +27,7 @@ const styles = {
   pos: {
     marginBottom: 12,
   },
+
 };
 
 function Pengeluaran(props) {

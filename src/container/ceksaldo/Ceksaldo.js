@@ -40,6 +40,10 @@ const styles = {
   input: {
     display: 'none',
   },
+  nominal:{
+    fontSize: 90,
+    paddingTop: 19
+  }
 };
 
 function LabaCard(props) {
@@ -50,36 +54,13 @@ function LabaCard(props) {
     <Card className={classes.card}>
       <CardContent>
         <Typography variant="h5" component="h2">
-        Dompet - Ku
+        Cek Saldo
         </Typography>
-        <Grid container spacing={24} style={{marginTop: 20}}>
-              <Grid item xs={8} sm={5} style={{marginLeft: 60}}>
-        <img src={CreditCard} alt='Card' style={{width: '200px'}} />
-        <p style={{fontSize: 32, marginTop:30}} >Rp.120.000.000</p>
-            </Grid>
-            
-
-
-            <Grid item xs={8} sm={4} style={{marginTop: 20}}>
-        <img src={Arrow} alt='Arrow' style={{width: '100px'}} />
         
-
-
-            </Grid>
-            
-            <Grid item xs={8} sm={1}>
-            <img src={Money} alt='Money'  style={{width: '200px'}} /> 
-            
-            </Grid>
-            </Grid>
-        
-
       </CardContent>
       <CardActions>
+      <p className={classes.nominal}>Rp. 57.000.000</p>
       </CardActions>
-      <Button variant="contained" color="primary" className={classes.button}>
-      Bagi Hasil
-    </Button>
       </Card>
     
   );
