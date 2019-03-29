@@ -11,6 +11,7 @@ import Laba from '../laba/Laba';
 import PendapatanCard from '../pendapatanCard/PendapatanCard'
 import PengeluaranCard from '../pengeluaranCard/PengeluaranCard';
 import Grid from '@material-ui/core/Grid'
+import Dompetku from './../dompetku/Dompetku'
 
 
 
@@ -72,7 +73,7 @@ class Dashboard extends Component {
         )} />
 
         <Route path="/Laba" component={() => (<Laba />) } />
-        <Route path="/dompetku" exact component={() => (
+        <Route path="/DompetKu" exact component={() => (
                             <section>
                             <PermanentDrawerLeft heads="Dompet-Ku" className={classes.dashboard}>        
                             </PermanentDrawerLeft>
@@ -80,7 +81,7 @@ class Dashboard extends Component {
                             </section>
 
         )} />
-        <Route path="/dompetku" component={() => (<Pendapatan />) } />
+        <Route path="/DompetKu" component={() => (<Dompetku />) } />
 
 
             </div>
